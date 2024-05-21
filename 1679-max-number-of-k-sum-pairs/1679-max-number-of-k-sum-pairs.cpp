@@ -1,6 +1,7 @@
 class Solution {
 public:
     int maxOperations(vector<int>& nums, int k) {
+       //Hash map to count the frequency of each num in the array
        std::unordered_map<int,int> freq;
        int opCount = 0;
        for (int num: nums) {
