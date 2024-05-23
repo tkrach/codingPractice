@@ -11,6 +11,7 @@ public:
 
             //We can only have at most k zeros within the subarray
             while (zeroCount > k) {
+                //Decrement zeroCount if the sliding windows leaves behind a zero
                 if (nums[left] == 0) {
                     zeroCount--;
                 }
